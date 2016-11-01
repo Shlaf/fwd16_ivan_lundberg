@@ -1,0 +1,16 @@
+#nav-toggle {
+  display: none;
+}
+#nav-toggle:checked ~ nav {
+		display: block;
+}
+#nav-toggle:checked ~ nav .fa-bars {
+		display: none;
+}
+ 
+
+@include respond-to('medium') {
+	label {
+    	display: none;
+  	}
+}
