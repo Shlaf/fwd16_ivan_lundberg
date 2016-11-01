@@ -123,6 +123,7 @@ img {
 		display: flex;
 		flex-flow: row;
 		justify-content: space-around;
+		min-width: 74%;
 	}
 }
 
@@ -135,7 +136,7 @@ img {
 
 	.menu {
 		flex-flow: row;
-		min-width: 74%;
+		
 
 	}
 
