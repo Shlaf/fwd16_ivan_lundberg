@@ -7,8 +7,22 @@
 #nav-toggle:checked ~ nav .fa-bars {
 		display: none;
 }
- 
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    z-index: 99999;
+}
 
+nav ul li:hover > ul {
+    display:block;
+}
+
+
+nav ul ul li {
+    display:list-item;
+    position: relative;
+}
 @include respond-to('medium') {
 	label {
     	display: none;
