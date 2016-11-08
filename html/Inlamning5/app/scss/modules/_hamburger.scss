@@ -1,0 +1,19 @@
+#nav-toggle {
+  display: none;
+}
+#nav-toggle:checked ~ nav {
+		display: block;
+}
+#nav-toggle:checked ~ nav .fa-bars {
+		display: none;
+}
+
+label {
+	margin-left: 10px;
+}
+
+@include respond-to('medium') {
+	label {
+    	display: none;
+  	}
+}

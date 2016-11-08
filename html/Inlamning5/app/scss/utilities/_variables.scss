@@ -1,11 +1,11 @@
-///kommentar för sassdoc
+///Breakpoints map
 
 $breakpoints: (
   'small':  ( min-width:  30.000em ),
-  'medium': ( min-width:  48.000em ),
+  'medium': ( min-width:  42.000em ),
   'large':  ( min-width: 62.000em ),
   'wide':  ( min-width: 75.000em )
-) !default;
+) !default;	
 
 @mixin respond-to($breakpoint) {
   // If the key exists in the map
@@ -18,4 +18,25 @@ $breakpoints: (
 }
 
 $font-stack: Helvetica, sans-serif;
+/// Color map
+$color: (
+  main: white,
+  secondary: #F0E68C,
+  third: #c4bb6a,
+) !default;
+
+
+%flexcard {
+  max-width: 98%;
+  opacity: 0.8;
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow: auto;
+  border-radius: 5px;
+}
+
+
 

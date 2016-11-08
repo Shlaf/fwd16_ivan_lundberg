@@ -1,0 +1,18 @@
+
+.flexCard {
+	@extend %flexcard;
+	background: map-get($color, 'secondary');
+
+}
+
+@include respond-to('medium') {
+
+	.flexCard {
+		max-width: 24%*2;
+	}
+
+	.flexCard:nth-child(5n) {
+		max-width: 98%;
+	}
+}
+

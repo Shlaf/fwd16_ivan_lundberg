@@ -1,0 +1,63 @@
+nav {
+	display: none;
+	background-color: rgba(0,0,0,0.2);
+	color: map-get($color, 'main');
+	flex-direction: column;
+
+
+	ul {
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		justify-content: center;
+		
+		
+		li {
+			width: 25%;
+			margin: 10px;
+
+			ul {
+				display: none;
+				flex-direction: column;
+			}
+		}
+			
+	}
+}
+
+nav ul li:hover > ul {
+  display: flex;
+
+}
+
+@include respond-to('medium') {
+	nav {
+		display: block;
+		display: flex;
+	    flex-direction: row;
+		justify-content: center;
+
+		
+		ul {
+			display: flex;
+			flex-flow: row;
+			justify-content: space-around;
+			width: 100%;
+
+			
+			ul {
+				position: absolute;
+				z-index: 100000;
+				background: rgba(0,0,0,0.8);				max-width: 20%;
+				border-radius: 10px;
+				
+			}
+
+		}
+	}
+}
+
+
+
+
+
