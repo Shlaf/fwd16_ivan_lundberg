@@ -11,23 +11,29 @@ nav {
 		align-items: center;
 		justify-content: center;
 		
-		
 		li {
-			width: 25%;
-			margin: 10px;
-
+			
 			ul {
 				display: none;
 				flex-direction: column;
+
 			}
 		}
 			
 	}
 }
 
-nav ul li:hover > ul {
+#meme:hover > ul {
   display: flex;
+}
 
+#show li {
+	min-width: 50px;
+	background: fuchsia;
+}
+
+#test:active > #show{
+	display: flex;
 }
 
 @include respond-to('medium') {
@@ -49,15 +55,28 @@ nav ul li:hover > ul {
 				position: absolute;
 				z-index: 100000;
 				background: rgba(0,0,0,0.8);				max-width: 20%;
-				border-radius: 10px;
-				
+				border-radius: 2px;
 			}
 
 		}
 	}
 }
 
+li {
+	padding: 10px;
+}
 
+#nav-toggle-toggle {
+  display: none;
+}
+#nav-toggle-toggle:checked ~ #show {
+	display: block;
+}
 
+@include respond-to('medium') {
+	label {
+    	display: none;
+  	}
+}
 
 
