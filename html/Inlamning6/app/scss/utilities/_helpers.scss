@@ -1,0 +1,12 @@
+/// Flexcard placeholder
+%flexcard {
+  max-width: 98%;
+  opacity: 0.8;
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow: auto;
+  border-radius: 5px;
+}

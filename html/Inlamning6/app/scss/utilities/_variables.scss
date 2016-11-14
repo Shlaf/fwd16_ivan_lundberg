@@ -1,0 +1,32 @@
+///Breakpoints map
+
+$breakpoints: (
+  'small':  ( min-width:  30.000em ),
+  'medium': ( min-width:  42.000em ),
+  'large':  ( min-width: 62.000em ),
+  'wide':  ( min-width: 75.000em )
+) !default;	
+/// Breakpoints mixin
+@mixin respond-to($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+}
+/// Font style 
+$font-stack: Helvetica, sans-serif;
+/// Color map
+$color: (
+  main: white,
+  secondary: #372f2b,
+  third: #372f2b,
+) !default;
+
+
+
+
+
+

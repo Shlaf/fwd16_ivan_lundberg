@@ -1,0 +1,15 @@
+.flexContainer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+
+		
+		.flexWrapper {
+			width: 80%;
+			display: flex;
+			flex-flow: row;
+			flex-wrap: wrap;
+			justify-content: space-around;
+				
+		}
+}

@@ -1,0 +1,17 @@
+#nav-toggle {
+  display: none;
+}
+#nav-toggle:checked ~ .menu-wrapper{
+		display: block;
+}
+
+
+label {
+	margin-left: 10px;
+}
+
+@include respond-to('medium') {
+	label {
+    	display: none;
+  	}
+}
