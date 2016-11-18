@@ -12,16 +12,17 @@ html,header, footer, body, nav, div, img, a,ul, li, h1, h2{
 	text-decoration: none;
 	list-style-type: none;
 	color: white;
+
 }
 
 body {
-	background: url(../../images/pineapple-background.jpg) no-repeat center center fixed;
-	background-size: cover;
+	@include page-bg ('../images/pineapple-background.jpg')
 	height: 100vh;
 	width: 100vw;
-	
 	img {
 		height: 50%;
 		width: 50%;
 	}
 }
+
+

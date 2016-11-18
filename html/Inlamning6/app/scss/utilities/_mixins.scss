@@ -1,0 +1,10 @@
+@mixin page-bg($imagepath,$bgrepeat:no-repeat,$bgattachment:fixed,$bgsize:cover) {
+	
+		color: map-get($color, bright);
+  		background: map-get($color, accent1);
+        background-image: url($imagepath);
+        background-repeat: $bgrepeat;
+		background-attachment:$bgattachment;
+		background-size:$bgsize;
+    
+}
