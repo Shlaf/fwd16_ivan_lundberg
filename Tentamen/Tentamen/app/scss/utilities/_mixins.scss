@@ -1,0 +1,15 @@
+/// Mixin for Background image
+@mixin page-bg($imagepath,$bgrepeat:no-repeat,$bgattachment:fixed,$bgsize:cover) {
+	
+		color: map-get($color, bright);
+        background-image: url($imagepath);
+        background-repeat: $bgrepeat;
+		background-attachment:$bgattachment;
+		background-size:$bgsize;
+    
+}
+
+@mixin border {
+	border-radius: 10px;
+	border: 2px solid #ec4970;
+}

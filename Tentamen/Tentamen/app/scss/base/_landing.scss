@@ -1,0 +1,22 @@
+.welcomeContainer {
+	min-width: 100%;
+	min-height: 100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.welcome {
+	display: flex;
+	min-height: 50%;
+	min-width: 50%;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+	background-color: #916c55;
+	opacity: 0.8;
+
+	h1 {
+		color: red;
+	}
+}

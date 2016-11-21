@@ -1,0 +1,20 @@
+#nav-toggle {
+  display: none;
+}
+#nav-toggle:checked ~ .menu-wrapper{
+		display: block;
+}
+
+label {
+	margin-left: 10px;
+}
+
+h4 {
+	float: right;
+}
+
+@include respond-to('medium') {
+	label {
+    	display: none;
+  	}
+}

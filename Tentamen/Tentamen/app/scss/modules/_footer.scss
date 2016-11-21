@@ -1,0 +1,24 @@
+.footerContainer {
+	background: map-get($color, 'secondary');
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: 0 -10px 10px -10px #333;
+
+	.footer-item {
+		padding: 10px;
+	}
+
+	li {
+		color: map-get($color, 'main');
+	}
+	
+}
+
+@include respond-to('medium') {
+	.footerContainer {
+		justify-content: space-around;
+		align-items: center;
+		flex-direction: row;
+	}
+}

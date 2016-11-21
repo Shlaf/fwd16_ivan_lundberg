@@ -1,0 +1,21 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html,header, footer, body, nav, div, img, a,ul, li, h1, h2{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style-type: none;
+
+}
+
+body {
+	@include page-bg ('../images/South-Africa-Safari.jpg')
+	height: 100vh;
+	width: 100vw;
+}
